@@ -15,7 +15,7 @@ fs.readFile(process.argv[4], function (err, data) {
          if (err) {
              console.log(err)
          } else {
-             console.log("Successfully uploaded data to " + bucket + "/" + key);
+             console.log("Successfully uploaded data to s3://" + bucket + "/" + key);
          }
       });
 });
